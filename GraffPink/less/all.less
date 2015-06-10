@@ -1,0 +1,409 @@
+@import "var.less";
+
+body{
+	background-color: @bg-color;
+	font: @middle-font-size 'Myriad Pro', Arial, Helvetica, sans-serif;
+	min-width: 319px;
+	margin: 0;
+	color: @text-color;
+}
+a{
+	color:@text-color;
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+img{
+	border-style: none;
+	max-width: 100%;
+	height: auto;
+}
+h1{
+	color: @h-color;
+}
+#wrapper{
+	background: url(../images/bg-img.jpg)no-repeat 50% 0;
+	margin: 0 auto;
+}
+#header-wrapper{
+	background: rgba(255, 255, 255, 0.9);
+}
+#header{
+	padding:20px 36px 0;
+	max-width: 1024px;
+	margin: 0 auto;
+	&:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+.logo{
+	float: left;
+	a{
+		background: url(../images/logo.png)no-repeat;
+		display: block;
+		width: 130px;
+		height: 55px;
+		text-indent: -9999px;
+	}
+}
+.opener {
+	float: right;
+	width: 31px;
+	height: 31px;
+	background: #de6d6e;
+	position: relative;
+	border-radius: 3px;
+	text-indent: -9999px;
+	overflow: hidden;
+	display: none; 
+
+	&:before, &:after,span {
+	background: #fff;
+	border-radius: 4px;
+	position: absolute;
+	top: 16px;
+	left: 25%;
+	right: 25%;
+	height: 3px;
+	margin-top: -2px;
+	}
+	&:before, &:after {
+	content: '';
+	top: 10px; 
+	}
+	&:after {
+	top: 22px; 
+	}
+	&:hover {
+	opacity: 0.7; 
+	}
+}
+#nav{
+	float: right;
+	ul{
+		text-transform: capitalize;
+		li{
+			display: inline-block;
+			a{
+			display: block;
+			padding:20px 15px 30px;
+				&:hover{
+					color: #404040;
+				}
+			}
+		}
+	}
+}
+.login{
+	display: block;
+	padding:10px 17px 0 22px;
+	float: right;
+		a{
+			display: block;
+			background: #de6d6e;
+			border-radius: 4px;
+			padding: 10px 14px 6px;
+			color:#fff;
+			vertical-align: middle;
+				&:before{
+					content: '';
+					background: url(../images/login-ico.png) no-repeat;
+					display: inline-block;
+					width: 16px;
+					height: 14px;
+					margin: 0 2px 0;
+					vertical-align: middle;
+				}
+				&:hover{
+					opacity: 0.7;
+				}
+		}
+}
+#main{
+	margin: 0 auto;
+	h1{
+	text-align: center;
+	}
+	.main-p{
+		text-align: center;
+	}
+	.welcome-heading{
+		font-size: 50px;
+		text-transform: uppercase;
+		color: #fff;
+		margin: 0;
+	}
+	h2{
+		font-size: 25px;
+		text-align: center;
+		font-weight: lighter;
+		color: #fff;
+		margin: 0 0 35px;
+	}
+}
+.container{
+	background: @bg-color;
+}
+.content{
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 60px 0 0;
+}
+.ellipse{
+	margin: 0 0 50px;
+	li{
+		display: inline-block;
+		width: 24.6%;
+		a{
+			display: block;
+			width: 180px;
+			height: 180px;
+			border-radius: 50%;
+			position: relative;
+			overflow: hidden;
+			margin: 0 auto;
+			span{
+				position: absolute;
+				text-transform: capitalize;
+				color: #fff;
+				left: 37%;
+				top: 73%;
+			}
+		}
+		.ellipse1{
+			background: url(../images/tickets-ico.png)no-repeat 50% 45%;
+			background-color: #4eb9f4;
+		}
+		.ellipse2{
+			background: url(../images/camera-logo.png)no-repeat 50% 45%;
+			background-color: #6fc125;
+		}
+		.ellipse3{
+			background: url(../images/beer-ico.png)no-repeat 55% 45%;
+			background-color: #ff5649;
+			span{
+				color: rgba(255, 255, 255, 0.5);
+				left: 42%;
+			}
+			.visual{
+				font-size: 12px;
+				color: #fff;
+				text-align: center;
+				padding: 0 8px;
+				top: 27%;
+				left: 4%;
+			}
+		}
+		.ellipse4{
+			background: url(../images/iPad-ico.png)no-repeat 50% 45%;
+			background-color: #e48f23;
+		}
+	}
+}
+.article{
+	background: url(../images/border.png)repeat-x;
+	padding: 45px 0 70px 65px;
+	li{
+		margin: 0 0 70px;
+		&:after{
+			content: '';
+			display: block;
+			clear: both;
+		}
+		&:last-child{
+			margin: 0;
+		}
+		img{
+			float: left;
+			margin: 0 23px 0 0;
+		}
+		h3{
+			color: @h-color;
+			font-size: 27px;
+			font-weight: lighter;
+			margin: 0 0 25px;
+		}
+		p{
+			text-align: justify;
+			overflow: hidden;
+		}
+	}
+}
+
+
+#footer-wrapper{
+	background: url(../images/footer-bg.jpg);
+	background-color: #2a262a;
+}
+#footer{
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 35px 0 35px 65px;
+	&:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.footer-info-holder{
+		width: 65%;
+		float: left;
+	}
+	.footer-info{
+		display: inline-block;
+		width: 23%;
+	}
+	strong{
+		display: block;
+		text-transform: capitalize;
+		font-size: 21px;
+		font-weight: lighter;
+		color: #aeaeae;
+		margin: 0 0 20px;
+		}
+	ul{
+		li{
+			a{
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+.social-holder{
+	float: right;
+	margin: 30px 0;
+	.social{
+		li{
+			display: inline-block;
+			margin: 0 0 0 22px;
+			a{
+				background: url(../images/social-sprite.png)no-repeat;
+				display: block;
+				height: 55px;
+				width: 56px;
+				text-indent: -9999px;
+			}
+			.twt{
+				background-position: -78px 0;
+			}
+			.hz1{
+				background-position: -153px 0;
+			}
+			.hz2{
+				background-position: -226px 0;
+			}
+		}
+	}
+}
+.copy{
+	float: right;
+}
+
+.circle1{
+	background: rgba(255, 255, 255, 0.6);
+	position: relative;
+	border-radius: 50%;
+	margin: 160px 0 35px;
+	height: 120px;
+	width: 120px;
+	left: 45%;
+}
+.circle2{
+	background: rgba(255, 255, 255, 0.6);
+	margin: -30px 0 0 60px;
+	position: absolute;
+	border-radius: 50%;
+	height: 90px;
+	width: 90px;
+}
+.circle3{
+	background: rgba(255, 255, 255, 0.6);
+	margin: 25px 0 0 95px;
+	position: absolute;
+	border-radius: 50%;
+	height: 70px;
+	width: 70px;
+}
+
+@media only screen and (max-width: 768px){
+	.welcome{
+		margin: 30px 0;
+	}
+	.opener{
+	display: block;
+	margin: 12px 0;
+	}
+	#nav{
+		display: none;
+	}
+	.main-p{
+		padding: 0 20px;
+	}
+	.circle1{
+		display: none;
+	}
+	.ellipse{
+		li{
+			display: inline-block;
+			width:49%;
+			margin: 0 0 10px;
+			&:first-child{
+				margin: 0 0 10px;
+			}
+			a{
+				margin: 0 auto
+			}
+		}
+	}
+	.article{
+		padding-right: 20px;
+	}
+	#footer{
+		.footer-info-holder{
+			float: none;
+			width: 100%;
+		}
+		.social-holder{
+			float: none;
+		}
+		.copy{
+			float: none;
+		}
+	}
+}
+@media only screen and (max-width: 320px){
+	.ellipse{
+		li{
+			width: 100%;
+		}
+	}
+	.login{
+		padding-left: 10px;
+		padding-right: 0;
+	}
+	#header{
+	padding:20px 16px 0;
+	}
+	.article{
+		padding-left: 20px;
+	}
+	#footer{
+		padding-left: 10px;
+		padding-right: 10px;
+		.social{
+			text-align: center;
+				li{
+					margin: 0;
+				}
+			}
+		.copy{
+		text-align: center;
+		}
+	}
+}
