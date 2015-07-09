@@ -2,6 +2,38 @@
 
 @textcolor: #555;
 
+@bg-color: #fff;
+
+@h2-color: #555;
+
+@primary-color: #3a3d40;
+
+@footer-color: #bfbfbf;
+
+
 // font-size
 
 @middle-font-size: 13px;
+
+@h1-font-size: 2.3em;
+
+//mixins
+
+.border-bot{
+	border-bottom: 2px solid #24272a;
+}
+
+.clearfix{
+	&:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+.nav-hover{
+	&:hover{
+			color:#7a9cb2;
+			text-decoration: none;
+		}
+}

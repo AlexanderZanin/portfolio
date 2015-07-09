@@ -1,3 +1,36 @@
 @bg-color: #fff;
 @text-color: #818180;
 @middle-font-size: 13px;
+@content-txt-color: #323231;
+@section-wrap: #e5e5e5;
+@dropdown-color: #636363;
+@footer-font: 14px Candara;
+@footer-color: #f8f7f7;
+@copyright-bg: #323131;
+@copyright-color: #c4c4c4;
+
+//mixins
+
+.clearfix{
+	&:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+.submit-bg{
+	background: -moz-linear-linear-gradient(175deg,#fdc33f 50%,#fb9508 65%);
+	background: -webkit-linear-linear-gradient(175deg,#fdc33f 50%,#fb9508 65%);
+	background: -o-linear-linear-gradient(175deg,#fdc33f 50%,#fb9508 65%);
+	background: -ms-linear-linear-gradient(175deg,#fdc33f 50%,#fb9508 65%);
+	background: linear-gradient(175deg,#fdc33f 50%,#fb9508 65%);
+}
+.footer-link-border{
+	&:after{
+			content: '';
+			width: 140px;
+			display: block;
+			padding: 40px 0 0;
+			border-bottom: 1px dashed #222122;
+		}
+}

@@ -24,11 +24,7 @@ ul{
 	background: url(../images/body-bg.jpg) no-repeat;
 }
 #header{
-	&:after{
-		content: '';
-		display: block;
-		clear: both;
-	}
+	.clearfix;
 	width: 960px;
 	margin: 0 auto;
 	padding: 60px 0 260px;
@@ -72,8 +68,7 @@ ul{
 		width: 168px;
 		padding: 0;
 		margin: 0;
-		list-style: none;
-		color: #636363;
+		color: @dropdown-color;
 		font: 12px Candara;
 		font-style: italic;
 		font-weight: normal;
@@ -111,15 +106,11 @@ ul{
 }
 .section-wrap{
 	background: url(../images/section-bg.jpg);
-	background-color: #e5e5e5;
+	background-color: @section-wrap;
 	box-shadow: inset 0 180px 40px rgba(255, 255, 255, 0.3);
 }
 .block{
-	&:after{
-		content: '';
-		display: block;
-		clear: both;
-	}
+	.clearfix;
 	width: 960px;
 	margin: 0 auto;
 	padding: 47px 0 30px;
@@ -138,11 +129,7 @@ ul{
 			padding: 10px 30px;
 			margin: 0 0 0 7px;
 			border: 1px solid #f09728;
-			background: -moz-linear-linear-gradient(175deg,#fdc33f 50%,#fb9508 65%);
-			background: -webkit-linear-linear-gradient(175deg,#fdc33f 50%,#fb9508 65%);
-			background: -o-linear-linear-gradient(175deg,#fdc33f 50%,#fb9508 65%);
-			background: -ms-linear-linear-gradient(175deg,#fdc33f 50%,#fb9508 65%);
-			background: linear-gradient(175deg,#fdc33f 50%,#fb9508 65%);
+			.submit-bg;
 			&:hover{
 				opacity: .8;
 			}
@@ -198,13 +185,9 @@ ul{
 	margin: 0 auto;
 }
 .content{
-	color: #323231;
+	color: @content-txt-color;
 	padding: 45px 0;
-	&:after{
-		content: '';
-		display: block;
-		clear: both;
-	}
+	.clearfix;
 }
 .post{
 	float: left;
@@ -285,7 +268,6 @@ ul{
 		z-index: 2;
 	}
 	.prev{
-		// left: 20px;
 		background: url(../images/prev.png)no-repeat;
 	}
 	.next{
@@ -311,9 +293,9 @@ ul{
 #footer{
 	width: 100%;
 	background: #4e4e4e;
-	font: 14px Candara;
+	font: @footer-font;
 	font-style: italic;
-	color: #f8f7f7;
+	color: @footer-color;
 	line-height: 24px;
 	.footer-content{
 		width: 960px;
@@ -346,13 +328,7 @@ ul{
 		margin: 0 0 0 75px;
 		width: 200px;
 		vertical-align: bottom;
-		&:after{
-			content: '';
-			width: 140px;
-			display: block;
-			padding: 40px 0 0;
-			border-bottom: 1px dashed #222122;
-		}
+		.footer-link-border;
 		li{
 			a{
 				color: #f8f7f7;
@@ -374,12 +350,12 @@ ul{
 		}
 	}
 	.copyright{
-		background: #323131;
+		background: @copyright-bg;
 		font-style: normal;
 		padding: 20px 0 20px 20px;
 		font-size: 13px;
 		display: block;
-		color: #c4c4c4;
+		color: @copyright-color;
 		margin: 36px 0 0;
 	}
 }

@@ -1,10 +1,19 @@
 .border-bot {
   border-bottom: 2px solid #24272a;
 }
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.nav-hover:hover {
+  color: #7a9cb2;
+  text-decoration: none;
+}
 body {
   color: #555555;
   font: 13px 'Myriad Pro', Arial, Helvetica, sans-serif;
-  background: #fff;
+  background: #ffffff;
   min-width: 319px;
   margin: 0;
 }
@@ -18,7 +27,7 @@ a {
   color: #d4d4d4;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:active {
   color: #7a9cb2;
@@ -44,7 +53,7 @@ h1 {
 h2 {
   margin-top: 0;
   text-transform: capitalize;
-  color: #555;
+  color: #555555;
 }
 #wrapper {
   overflow: hidden;
@@ -332,7 +341,7 @@ ul {
   margin-bottom: 50px;
 }
 #footer {
-  background-color: #3a3d40;
+  background: #3a3d40;
   border-top: 5px solid #24272a;
 }
 #footer:after {
@@ -461,9 +470,7 @@ ul {
   max-width: 1020px;
 }
 .social-icons {
-  list-style: none;
   float: right;
-  padding: 0;
   margin: 0 15px 0 0;
 }
 .social-icons li {

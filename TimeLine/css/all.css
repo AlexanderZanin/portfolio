@@ -1,7 +1,11 @@
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 body {
   background: url(../images/bg.jpg);
   font: 13px Arial, Helvetica, sans-serif;
-  min-width: 319px;
   margin: 0;
   color: #555555;
 }
@@ -33,15 +37,15 @@ h1 {
 .header-holder {
   padding: 30px 100px 35px;
 }
-.header-holder span {
-  float: right;
-  padding: 20px 0 0;
-  color: #fff;
-}
 .header-holder:after {
   content: '';
   display: block;
   clear: both;
+}
+.header-holder span {
+  float: right;
+  padding: 20px 0 0;
+  color: #fff;
 }
 .logo {
   float: left;
@@ -120,6 +124,11 @@ nav {
   border-bottom: 4px solid #363535;
   width: 100%;
 }
+nav:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 nav input {
   float: right;
   width: 140px;
@@ -130,11 +139,6 @@ nav input {
   padding: 0 10px;
   background: url(../images/search.png) 140px 5px no-repeat;
   background-color: #fff;
-}
-nav:after {
-  content: '';
-  display: block;
-  clear: both;
 }
 .nav {
   font-size: 16px;
@@ -201,7 +205,7 @@ nav:after {
   background: #512b44;
 }
 .content {
-  background: #fff;
+  background: #ffffff;
   padding: 50px;
 }
 .gallery-holder {
@@ -369,12 +373,10 @@ em {
   clear: both;
 }
 #footer form label {
-  display: block;
   float: right;
   color: #7a7979;
 }
 #footer form input[type="text"] {
-  display: block;
   float: left;
   border-radius: 3px;
   border: none;
@@ -394,7 +396,6 @@ em {
 #footer form textarea {
   border-radius: 3px;
   border: none;
-  display: block;
   width: 257px;
   height: 70px;
   resize: none;

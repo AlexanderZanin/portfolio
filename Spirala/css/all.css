@@ -1,3 +1,22 @@
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.submit-bg {
+  background: -moz-linear-linear-gradient(175deg, #fdc33f 50%, #fb9508 65%);
+  background: -webkit-linear-linear-gradient(175deg, #fdc33f 50%, #fb9508 65%);
+  background: -o-linear-linear-gradient(175deg, #fdc33f 50%, #fb9508 65%);
+  background: -ms-linear-linear-gradient(175deg, #fdc33f 50%, #fb9508 65%);
+  background: linear-gradient(175deg, #fdc33f 50%, #fb9508 65%);
+}
+.footer-link-border:after {
+  content: '';
+  width: 140px;
+  display: block;
+  padding: 40px 0 0;
+  border-bottom: 1px dashed #222122;
+}
 body {
   background-color: #ffffff;
   background: url(../images/bg-rep.jpg);
@@ -68,7 +87,6 @@ ul {
   width: 168px;
   padding: 0;
   margin: 0;
-  list-style: none;
   color: #636363;
   font: 12px Candara;
   font-style: italic;

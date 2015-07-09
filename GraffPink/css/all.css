@@ -1,3 +1,8 @@
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 body {
   background-color: #ffffff;
   font: 15px 'Myriad Pro', Arial, Helvetica, sans-serif;

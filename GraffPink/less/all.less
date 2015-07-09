@@ -35,11 +35,7 @@ h1{
 	padding:20px 36px 0;
 	max-width: 1024px;
 	margin: 0 auto;
-	&:after{
-		content: '';
-		display: block;
-		clear: both;
-	}
+	.clearfix;
 }
 .logo{
 	float: left;
@@ -177,15 +173,15 @@ h1{
 		}
 		.ellipse1{
 			background: url(../images/tickets-ico.png)no-repeat 50% 45%;
-			background-color: #4eb9f4;
+			background-color: @ellipse1-bg-color;
 		}
 		.ellipse2{
 			background: url(../images/camera-logo.png)no-repeat 50% 45%;
-			background-color: #6fc125;
+			background-color: @ellipse2-bg-color;
 		}
 		.ellipse3{
 			background: url(../images/beer-ico.png)no-repeat 55% 45%;
-			background-color: #ff5649;
+			background-color: @ellipse3-bg-color;
 			span{
 				color: rgba(255, 255, 255, 0.5);
 				left: 42%;
@@ -201,7 +197,7 @@ h1{
 		}
 		.ellipse4{
 			background: url(../images/iPad-ico.png)no-repeat 50% 45%;
-			background-color: #e48f23;
+			background-color: @ellipse4-bg-color;
 		}
 	}
 }
@@ -210,11 +206,8 @@ h1{
 	padding: 45px 0 70px 65px;
 	li{
 		margin: 0 0 70px;
-		&:after{
-			content: '';
-			display: block;
-			clear: both;
-		}
+		.clearfix;
+
 		&:last-child{
 			margin: 0;
 		}
@@ -238,17 +231,13 @@ h1{
 
 #footer-wrapper{
 	background: url(../images/footer-bg.jpg);
-	background-color: #2a262a;
+	background-color: @footer-bg-color;
 }
 #footer{
 	max-width: 1024px;
 	margin: 0 auto;
 	padding: 35px 0 35px 65px;
-	&:after{
-		content: '';
-		display: block;
-		clear: both;
-	}
+	.clearfix;
 	.footer-info-holder{
 		width: 65%;
 		float: left;
@@ -306,7 +295,7 @@ h1{
 }
 
 .circle1{
-	background: rgba(255, 255, 255, 0.6);
+	background: @circle-bg-color;
 	position: relative;
 	border-radius: 50%;
 	margin: 160px 0 35px;
@@ -315,7 +304,7 @@ h1{
 	left: 45%;
 }
 .circle2{
-	background: rgba(255, 255, 255, 0.6);
+	background: @circle-bg-color;
 	margin: -30px 0 0 60px;
 	position: absolute;
 	border-radius: 50%;
@@ -323,7 +312,7 @@ h1{
 	width: 90px;
 }
 .circle3{
-	background: rgba(255, 255, 255, 0.6);
+	background: @circle-bg-color;
 	margin: 25px 0 0 95px;
 	position: absolute;
 	border-radius: 50%;

@@ -4,7 +4,6 @@
 body{
 	background: url(../images/bg.jpg);
 	font: @middle-font-size Arial, Helvetica, sans-serif;
-	min-width: 319px;
 	margin: 0;
 	color: @text-color;
 }
@@ -36,15 +35,11 @@ h1{
 
 .header-holder{
 	padding: 30px 100px 35px;
+	.clearfix;
 	span{
 		float: right;
 		padding: 20px 0 0;
 		color: #fff;
-	}
-	&:after{
-		content: '';
-		display: block;
-		clear: both;
 	}
 }
 .logo{
@@ -59,7 +54,6 @@ h1{
 }
 .like{
 	float: right;
-	// display: inline-block;
 	width: 47px;
 	height: 20px;
 	margin: 16px 7px 0 30px;
@@ -125,6 +119,7 @@ nav{
 	background: rgba(0, 0, 0, 0.5);
 	border-bottom: 4px solid #363535;
 	width: 100%;
+	.clearfix;
 	input{
 		float: right;
 		width: 140px;
@@ -135,11 +130,6 @@ nav{
 		padding: 0 10px;
 		background: url(../images/search.png) 140px 5px no-repeat;
 		background-color: #fff;
-	}
-		&:after{
-		content: '';
-		display: block;
-		clear: both;
 	}
 }
 .nav{
@@ -175,7 +165,7 @@ nav{
 	}
 }
 .portfolio-nav{
-	background: #904c7a;
+	background: @portfolio-nav-bg;
 	font-size: 18px;
 	padding: 0 100px;
 	li{
@@ -197,7 +187,7 @@ nav{
 			}
 		}
 		a{
-			color: #d3b7ca;
+			color: @nav-a-color;
 			display: inline-block;
 			padding: 21px 10px 20px;
 			&:hover{
@@ -206,14 +196,14 @@ nav{
 		}
 	}
 	.active-li{
-		background: #6c395b;
+		background: @active-li-bg;
 	}
 	.active-month{
-		background: #512b44;
+		background: @active-month-bg;
 	}
 }
 .content{
-	background: #fff;
+	background: @content-bg;
 	padding: 50px;
 }
 .gallery-holder{
@@ -318,11 +308,7 @@ em{
 	border-top: 1px solid #e5e5e5;
 	margin: 0 50px;
 	padding: 50px 0 0;
-		&:after{
-		content: '';
-		display: block;
-		clear: both;
-		}
+	.clearfix;
 	h2{
 		display: block;
 		margin: 0;
@@ -341,13 +327,9 @@ em{
 	}
 }
 #footer{
-	color: #f0f0f0;
+	color: @footer-color;
 	padding: 0 100px 20px;
-	&:after{
-		content: '';
-		display: block;
-		clear: both;
-		}
+	.clearfix;
 	div{
 		width: 33%;
 		float: left;
@@ -379,18 +361,12 @@ em{
 		background: rgba(0, 0, 0, 0.5);
 		border-radius: 3px;
 		padding: 10px;
-		&:after{
-		content: '';
-		display: block;
-		clear: both;
-		}
+		.clearfix;
 		label{
-			display: block;
 			float: right;
 			color:#7a7979;
 		}
 		input[type="text"]{
-			display: block;
 			float: left;
 			border-radius: 3px;
 			border: none;
@@ -410,7 +386,6 @@ em{
 		textarea{
 			border-radius: 3px;
 			border: none;
-			display: block;
 			width: 257px;
 			height: 70px;
 			resize: none;
